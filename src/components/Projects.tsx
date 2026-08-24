@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="section-padding bg-slate-50 dark:bg-slate-900/40"
+      className="section-padding bg-[#FFF5EE]"
       aria-label="Projects"
     >
       <Container>
@@ -22,17 +22,21 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {projects.map((project) => (
-            <Card key={project.id} className="flex flex-col overflow-hidden">
-              <div className="relative aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+            <Card
+              key={project.id}
+              className="flex flex-col overflow-hidden shadow-[0_10px_30px_-8px_rgba(15,23,42,0.18)] hover:shadow-[0_16px_40px_-8px_rgba(15,23,42,0.25)]"
+            >
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 dark:bg-slate-800">
                 <Image
                   src={project.image}
                   alt={`${project.title} preview`}
                   fill
                   sizes="(min-width: 640px) 50vw, 100vw"
                   className="object-cover"
+                  unoptimized
                 />
                 {project.featured && (
-                  <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm dark:bg-slate-900/90 dark:text-slate-200">
+                  <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm dark:bg-slate-800/90 dark:text-slate-200">
                     Featured
                   </span>
                 )}

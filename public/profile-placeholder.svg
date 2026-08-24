@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" width="640" height="800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5308c" />
+      <stop offset="55%" stop-color="#d6469e" />
+      <stop offset="100%" stop-color="#fd5bab" />
+    </linearGradient>
+    <linearGradient id="silhouette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.95)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.75)" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="640" height="800" fill="url(#bg)" />
+  <rect width="640" height="800" fill="url(#grid)" />
+
+  <circle cx="150" cy="120" r="90" fill="rgba(255,255,255,0.08)" />
+  <circle cx="540" cy="700" r="140" fill="rgba(255,255,255,0.07)" />
+
+  <g>
+    <circle cx="320" cy="330" r="130" fill="url(#silhouette)" />
+    <path d="M120 800c0-140 90-230 200-230s200 90 200 230z" fill="url(#silhouette)" />
+  </g>
+
+  <text x="50%" y="93%" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="rgba(255,255,255,0.85)">
+    Replace with your photo
+  </text>
+</svg>

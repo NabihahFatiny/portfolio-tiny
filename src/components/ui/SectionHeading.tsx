@@ -3,6 +3,8 @@ type SectionHeadingProps = {
   title: string;
   description?: string;
   align?: "left" | "center";
+  /** Use on sections with a dark background so the text stays readable. */
+  inverted?: boolean;
 };
 
 export default function SectionHeading({
@@ -10,21 +12,23 @@ export default function SectionHeading({
   title,
   description,
   align = "left",
+  inverted = false,
 }: SectionHeadingProps) {
   const alignment = align === "center" ? "text-center items-center" : "text-left items-start";
+  const eyebrowColor = inverted ? "text-brand-300" : "text-brand-600";
+  const titleColor = inverted ? "text-white" : "text-slate-900";
+  const descriptionColor = inverted ? "text-slate-300" : "text-slate-600";
 
   return (
-    <div className={`mb-12 flex flex-col gap-3 ${alignment}`}>
+    <div className={`mb-14 flex flex-col gap-3 ${alignment}`}>
       {eyebrow && (
-        <span className="text-sm font-semibold uppercase tracking-widest text-brand-600 dark:text-brand-400">
+        <span className={`text-4xl font-bold uppercase tracking-widest sm:text-5xl ${eyebrowColor}`}>
           {eyebrow}
         </span>
       )}
-      <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
-        {title}
-      </h2>
+      <h2 className={`text-4xl font-bold tracking-tight sm:text-5xl ${titleColor}`}>{title}</h2>
       {description && (
-        <p className="max-w-2xl text-base text-slate-600 dark:text-slate-400">{description}</p>
+        <p className={`max-w-2xl text-lg ${descriptionColor}`}>{description}</p>
       )}
     </div>
   );

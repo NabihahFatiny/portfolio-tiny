@@ -30,11 +30,26 @@ const config: Config = {
       animation: {
         "fade-up": "fadeUp 0.6s ease-out both",
         blob: "blob 7s infinite",
+        "flip-in": "flipIn 0.5s ease-out both",
+        marquee: "marquee 55s linear infinite",
+        float: "float 5s ease-in-out infinite",
       },
       keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-18px)" },
+        },
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        flipIn: {
+          "0%": { opacity: "0", transform: "rotateY(90deg)" },
+          "100%": { opacity: "1", transform: "rotateY(0deg)" },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
         blob: {
           "0%, 100%": { transform: "translate(0px, 0px) scale(1)" },

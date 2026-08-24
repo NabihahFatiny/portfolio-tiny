@@ -4,16 +4,17 @@
 // -----------------------------------------------------------------------------
 
 export const profile = {
-  name: "Jordan Alex Rivera",
+  name: "Fatiny",
   role: "Computer Science Graduate",
   tagline: "Building thoughtful software, one line at a time.",
   summary:
-    "Recent Computer Science graduate passionate about full-stack development, clean architecture, and solving real-world problems with code. Eager to bring fresh ideas and a strong foundation in algorithms, data structures, and modern web technologies to a growing engineering team.",
-  location: "Kuala Lumpur, Malaysia",
+    "I recently completed my degree in Computer Science, specialising in Software Engineering. Throughout my studies, I worked on different web-based projects and gained experience in developing, testing and improving system features. I'm particularly interested in web development, software testing, Quality Assurance and IT support. This portfolio brings together my education, skills, projects and experiences so far.",
+  location: "Bandar Baru Bangi, Selangor",
   email: "your.email@example.com",
   phone: "+60 12-345 6789",
   resumeUrl: "/resume.pdf",
-  avatarInitials: "JR",
+  photoUrl: "/gambar-tiny/Fatiny.jpg",
+  avatarInitials: "F",
   socials: {
     github: "https://github.com/your-username",
     linkedin: "https://linkedin.com/in/your-username",
@@ -22,13 +23,28 @@ export const profile = {
   },
 };
 
-export const education = [
+export type Education = {
+  id: string;
+  institution: string;
+  degree: string;
+  startYear: number;
+  /** Set to null for an ongoing programme — renders as "Present". */
+  endYear: number | null;
+  location: string;
+  gpa: string;
+  description: string;
+  highlights: string[];
+};
+
+// Listed most-recent first — the timeline below renders them in this order.
+export const education: Education[] = [
   {
     id: "edu-1",
-    institution: "University of Technology",
-    degree: "B.Sc. (Hons) in Computer Science",
-    period: "2022 — 2026",
-    location: "Kuala Lumpur, Malaysia",
+    institution: "Universiti Malaysia Pahang Al-Sultan Abdullah",
+    degree: "Bachelor of Computer Science (Software Engineering) with Honours",
+    startYear: 2023,
+    endYear: 2026,
+    location: "Pahang, Malaysia",
     gpa: "3.75 / 4.00",
     description:
       "Focused on software engineering, algorithms, and database systems. Completed a final year project on real-time collaborative applications using WebSockets.",
@@ -40,10 +56,11 @@ export const education = [
   },
   {
     id: "edu-2",
-    institution: "Sunway College",
-    degree: "Foundation in Computing",
-    period: "2021 — 2022",
-    location: "Kuala Lumpur, Malaysia",
+    institution: "Universiti Malaysia Pahang Al-Sultan Abdullah",
+    degree: "Diploma in Computer Science",
+    startYear: 2021,
+    endYear: 2023,
+    location: "Pahang, Malaysia",
     gpa: "3.90 / 4.00",
     description:
       "Built a strong foundation in programming fundamentals, mathematics, and computer systems prior to undergraduate studies.",
@@ -61,58 +78,88 @@ export const skills: SkillCategory[] = [
   {
     id: "languages",
     title: "Languages",
-    skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "SQL"],
+    skills: ["Java", "JavaScript", "C", "C++", "C#", "Python", "PHP", "SQL"],
   },
   {
     id: "frontend",
     title: "Frontend",
-    skills: ["React", "Next.js", "Tailwind CSS", "HTML5 & CSS3", "Redux"],
+    skills: ["HTML5", "CSS3", "React.js", "Bootstrap", "Responsive Web Design"],
   },
   {
     id: "backend",
-    title: "Backend",
-    skills: ["Node.js", "Express", "REST APIs", "GraphQL", "Laravel"],
+    title: "Backend & Frameworks",
+    skills: ["Laravel", "Filament", "Mobile apps"],
   },
   {
     id: "database",
-    title: "Databases & Cloud",
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "AWS Basics"],
+    title: "Database",
+    skills: [
+      "MySQL",
+      "Database Design",
+      "SQL Queries",
+      "Database Management Systems (DBMS)",
+    ],
+  },
+  {
+    id: "testing",
+    title: "Testing & QA",
+    skills: ["Software Testing / Software Quality Assurance"],
   },
   {
     id: "tools",
-    title: "Tools & Practices",
-    skills: ["Git & GitHub", "Docker", "Jira", "Agile/Scrum", "CI/CD"],
+    title: "Tools & Platforms",
+    skills: ["GitHub", "GitLab", "Visual Studio Code", "XAMPP", "Figma", "Firebase"],
   },
 ];
 
 export const certifications = [
   {
-    id: "cert-1",
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    date: "Mar 2026",
-    credentialUrl: "https://www.credly.com/badges/your-badge-id",
+    id: "cert-citrex",
+    title: "Certificate of Award — Gold, Undergraduate Student",
+    issuer: "CITReX 2026, Universiti Malaysia Pahang Al-Sultan Abdullah",
+    date: "May 2026",
+    image: "/certifications/cert-citrex.png",
+    credentialUrl: "/certifications/cert-citrex.png",
   },
   {
-    id: "cert-2",
-    title: "Meta Front-End Developer Professional Certificate",
-    issuer: "Meta (Coursera)",
-    date: "Nov 2025",
-    credentialUrl: "https://coursera.org/verify/your-cert-id",
+    id: "cert-ccna",
+    title: "CCNAv7: Introduction to Networks",
+    issuer: "Cisco Networking Academy",
+    date: "Jun 2023",
+    image: "/certifications/cert-ccna.jpg",
+    credentialUrl: "/certifications/cert-ccna.jpg",
   },
   {
-    id: "cert-3",
-    title: "Google IT Automation with Python",
-    issuer: "Google (Coursera)",
-    date: "Jun 2025",
-    credentialUrl: "https://coursera.org/verify/your-cert-id",
+    id: "cert-efset",
+    title: "EF SET English Certificate — 74/100, C2 Proficient",
+    issuer: "EF Standard English Test",
+    date: "Nov 2024",
+    image: "/certifications/cert-efset.png",
+    credentialUrl: "https://cert.efset.org/s5gdta",
   },
   {
-    id: "cert-4",
-    title: "The Complete JavaScript Course",
-    issuer: "Udemy",
-    date: "Feb 2025",
-    credentialUrl: "https://udemy.com/certificate/your-cert-id",
+    id: "cert-lonjakan-paradigma",
+    title: "Anugerah Lonjakan Paradigma",
+    issuer: "Majlis Kecemerlangan — UMPSA / MDEC",
+    date: "2026",
+    image: "/certifications/cert-lonjakan-paradigma.png",
+    credentialUrl: "/certifications/cert-lonjakan-paradigma.png",
+  },
+  {
+    id: "cert-math-screening",
+    title: "HDA0011 — Mathematics Screening Test (Diploma)",
+    issuer: "Akademi Adab, Universiti Malaysia Pahang",
+    date: "Aug 2021",
+    image: "/certifications/cert-math-screening.png",
+    credentialUrl: "/certifications/cert-math-screening.png",
+  },
+  {
+    id: "cert-canva-editing",
+    title: "Edit Like a Pro with Canva",
+    issuer: "Akademi Adab, Universiti Malaysia Pahang",
+    date: "Feb 2023",
+    image: "/certifications/cert-canva-editing.png",
+    credentialUrl: "/certifications/cert-canva-editing.png",
   },
 ];
 
@@ -129,44 +176,44 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "proj-1",
-    title: "TaskFlow — Collaborative Task Manager",
+    id: "proj-fkpark",
+    title: "FKPark",
     description:
-      "A full-stack task management app with real-time updates, drag-and-drop boards, and team workspaces. Built with Next.js, TypeScript, and Socket.IO.",
-    image: "/projects/placeholder-1.svg",
-    tags: ["Next.js", "TypeScript", "Socket.IO", "PostgreSQL"],
-    liveUrl: "https://your-demo-link.com",
-    repoUrl: "https://github.com/your-username/taskflow",
+      "FKPark is a web-based Car Parking Management System, featuring vehicle registration, parking slot booking, QR code-based access control, and traffic summons.",
+    image: "/projects/fkpark.png",
+    tags: ["Web Application", "Full Stack", "Database"],
+    repoUrl: "https://github.com/NabihahFatiny/FKPark",
     featured: true,
   },
   {
-    id: "proj-2",
-    title: "EcoTrack — Carbon Footprint Tracker",
+    id: "proj-classconnect",
+    title: "ClassConnect",
     description:
-      "A responsive web app that helps users log daily activities and visualize their estimated carbon footprint with interactive charts.",
-    image: "/projects/placeholder-2.svg",
-    tags: ["React", "Chart.js", "Firebase"],
-    liveUrl: "https://your-demo-link.com",
-    repoUrl: "https://github.com/your-username/ecotrack",
+      "ClassConnect is a web-based platform designed to help teachers and students manage lessons, assignments, and communication in one centralized system.",
+    image: "/projects/classconnect.png",
+    tags: ["Web Application", "Full Stack", "Responsive"],
+    repoUrl: "https://github.com/NabihahFatiny/ClassConnect",
     featured: true,
   },
   {
-    id: "proj-3",
-    title: "DevNotes — Markdown Note-Taking CLI",
+    id: "proj-workshop-management-system",
+    title: "Workshop Management System",
     description:
-      "A lightweight command-line tool for developers to jot down markdown notes, tag them, and search through them instantly.",
-    image: "/projects/placeholder-3.svg",
-    tags: ["Node.js", "Commander.js", "SQLite"],
-    repoUrl: "https://github.com/your-username/devnotes",
+      "The Workshop Management System is an application to help workshop owners manage inventory, schedules, and employee payroll in one platform.",
+    image: "/projects/workshop-management-system.png",
+    tags: ["Mobile Application", "Flutter", "Full Stack"],
+    repoUrl: "https://github.com/NabihahFatiny/Workshop-Management-System",
+    featured: true,
   },
   {
-    id: "proj-4",
-    title: "QuizWiz — Online Quiz Platform",
+    id: "proj-nilamfyp",
+    title: "NilamFYP",
     description:
-      "A university group project: a quiz platform supporting timed quizzes, auto-grading, and an admin dashboard for analytics.",
-    image: "/projects/placeholder-4.svg",
-    tags: ["Laravel", "MySQL", "Bootstrap"],
-    repoUrl: "https://github.com/your-username/quizwiz",
+      "A digital platform to help students record and monitor their NILAM reading activities. Students can add books they have read, write book summaries, and submit ratings.",
+    image: "/projects/nilamfyp.png",
+    tags: ["Web Application", "Full Stack", "Student System"],
+    repoUrl: "https://github.com/NabihahFatiny/nilamfyp",
+    featured: true,
   },
 ];
 
