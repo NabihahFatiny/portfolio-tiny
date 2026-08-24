@@ -68,6 +68,48 @@ export const education: Education[] = [
   },
 ];
 
+export type Experience = {
+  id: string;
+  role: string;
+  company: string;
+  period: string;
+  location: string;
+  image: string | null;
+  highlights: string[];
+};
+
+// Listed most-recent first.
+export const experience: Experience[] = [
+  {
+    id: "exp-xentral",
+    role: "IT Intern",
+    company: "Xentral Methods",
+    period: "March – August 2026",
+    location: "Cyberjaya, Selangor",
+    image: "/internship/xentral-methods.png",
+    highlights: [
+      "Developed and improved web-based systems using Laravel, Filament, Tailwind CSS and MySQL.",
+      "Conducted functional testing, API testing and user acceptance testing (UAT).",
+      "Fixed system issues and improved interface responsiveness based on client feedback.",
+      "Managed project updates using Git and GitLab and prepared technical documentation.",
+    ],
+  },
+  {
+    id: "exp-ipgkpi",
+    role: "IT Support Intern",
+    company: "Institut Pendidikan Guru Kampus Pendidikan Islam (IPGKPI)",
+    period: "March – August 2023",
+    location: "Bangi, Selangor",
+    image: "/internship/ipgkpi.jpg",
+    highlights: [
+      "Provided technical support for computer hardware, software and peripheral devices.",
+      "Assisted staff with troubleshooting system, printer and internet connectivity issues.",
+      "Installed and configured software and prepared computer equipment for staff and institutional activities.",
+      "Maintained IT equipment records and documented technical issues and solutions.",
+    ],
+  },
+];
+
 export type SkillCategory = {
   id: string;
   title: string;
@@ -236,6 +278,7 @@ export const projects: Project[] = [
 export const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Education", href: "#education" },
+  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Certifications", href: "#certifications" },
   { label: "Projects", href: "#projects" },
