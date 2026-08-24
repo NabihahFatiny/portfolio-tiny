@@ -4,7 +4,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 import { ExternalLinkIcon, GithubIcon } from "@/components/ui/Icons";
-import { projects } from "@/data/portfolio";
+import { profile, projects } from "@/data/portfolio";
 
 export default function Projects() {
   return (
@@ -19,6 +19,16 @@ export default function Projects() {
           title="Projects"
           description="My software development projects showcase my experience in building web and mobile applications using Flutter and modern web development tools. They demonstrate my skills in system design, UI development and problem-solving. Visit my GitHub to explore more projects."
         />
+
+        <a
+          href={profile.socials.github}
+          target="_blank"
+          rel="noreferrer"
+          className="mb-10 -mt-4 inline-flex items-center gap-2 rounded-full border-2 border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
+        >
+          <GithubIcon className="h-4 w-4" />
+          Visit My GitHub
+        </a>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {projects.map((project) => (
