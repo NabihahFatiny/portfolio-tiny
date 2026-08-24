@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import { ArrowRightIcon, MailIcon, MapPinIcon } from "@/components/ui/Icons";
+import { ArrowRightIcon, GithubIcon, MailIcon, MapPinIcon } from "@/components/ui/Icons";
 import { profile } from "@/data/portfolio";
 
 const greeting = "Hi, I'm";
@@ -66,18 +66,56 @@ export default function Hero() {
               </a>
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 px-8 py-4 text-base font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-violet-300 px-8 py-4 text-base font-semibold text-violet-700 transition hover:-translate-y-0.5 hover:border-violet-500 hover:bg-violet-50 dark:border-violet-700 dark:text-violet-300 dark:hover:border-violet-500 dark:hover:bg-violet-950/40"
               >
                 <ArrowRightIcon className="h-5 w-5" />
                 View Projects
               </a>
               <a
                 href="#connect"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 px-8 py-4 text-base font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-blue-300 px-8 py-4 text-base font-semibold text-blue-700 transition hover:-translate-y-0.5 hover:border-blue-500 hover:bg-blue-50 dark:border-blue-700 dark:text-blue-300 dark:hover:border-blue-500 dark:hover:bg-blue-950/40"
               >
                 <MailIcon className="h-5 w-5" />
                 Contact Me
               </a>
+              <a
+                href={profile.socials.github}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-emerald-300 px-8 py-4 text-base font-semibold text-emerald-700 transition hover:-translate-y-0.5 hover:border-emerald-500 hover:bg-emerald-50 dark:border-emerald-700 dark:text-emerald-300 dark:hover:border-emerald-500 dark:hover:bg-emerald-950/40"
+              >
+                <GithubIcon className="h-5 w-5" />
+                GitHub
+              </a>
+            </div>
+
+            <div className="animate-fade-up [animation-delay:0.3s] mt-10 flex items-center gap-14">
+              <div>
+                <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
+                  4+
+                </p>
+                <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Years
+                </p>
+              </div>
+              <div>
+                <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
+                  15+
+                </p>
+                <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                  Projects
+                </p>
+              </div>
+            </div>
+
+            <div className="animate-fade-up [animation-delay:0.35s] mt-10">
+              <p className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+                Web Dev <span className="text-brand-500">&middot;</span> Software Testing{" "}
+                <span className="text-brand-500">&middot;</span> IT
+              </p>
+              <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                Interests
+              </p>
             </div>
           </div>
 

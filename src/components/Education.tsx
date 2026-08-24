@@ -1,6 +1,5 @@
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { ArrowRightIcon } from "@/components/ui/Icons";
 import { education } from "@/data/portfolio";
 
 const BAR_GRADIENTS = [
@@ -40,7 +39,6 @@ export default function Education() {
         <div className="rounded-3xl border border-white/10 bg-white/95 p-8 shadow-2xl shadow-purple-950/40 backdrop-blur sm:p-10">
           {/* Year axis */}
           <div className="relative mb-14">
-            <ArrowRightIcon className="absolute -top-6 left-0 h-4 w-4 -rotate-12 text-brand-500" />
             <div className="flex items-center justify-between text-sm font-semibold text-slate-700 sm:text-base dark:text-slate-300">
               {years.map((year) => (
                 <span key={year}>{year}</span>

@@ -26,8 +26,15 @@ export default function Navbar() {
         isScrolled ? "shadow-sm" : ""
       }`}
     >
-      <Container className="flex h-24 items-center">
-        <nav className="mx-auto hidden items-center gap-10 md:flex">
+      <Container className="flex h-24 items-center justify-between">
+        <a
+          href="#home"
+          className="text-lg font-bold tracking-tight text-slate-900 sm:text-xl dark:text-white"
+        >
+          Nabihah Fatiny
+        </a>
+
+        <nav className="hidden items-center gap-10 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -42,7 +49,7 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((v) => !v)}
-          className="ml-auto inline-flex h-12 w-12 items-center justify-center rounded-lg text-slate-700 md:hidden dark:text-slate-200"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-lg text-slate-700 md:hidden dark:text-slate-200"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >

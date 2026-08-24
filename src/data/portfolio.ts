@@ -16,7 +16,7 @@ export const profile = {
   photoUrl: "/gambar-tiny/Fatiny.jpg",
   avatarInitials: "F",
   socials: {
-    github: "https://github.com/your-username",
+    github: "https://github.com/NabihahFatiny",
     linkedin: "https://www.linkedin.com/in/nabihahfatiny/",
     twitter: "https://twitter.com/your-username",
     website: "https://your-domain.com",
@@ -160,6 +160,22 @@ export const certifications = [
     date: "Feb 2023",
     image: "/certifications/cert-canva-editing.png",
     credentialUrl: "/certifications/cert-canva-editing.png",
+  },
+  {
+    id: "cert-aptitude-test",
+    title: "Certificate of Appreciation — Aptitude Test",
+    issuer: "Faculty of Computing, Universiti Malaysia Pahang Al-Sultan Abdullah",
+    date: "Aug 2023",
+    image: "/certifications/cert-aptitude-test.png",
+    credentialUrl: "/certifications/cert-aptitude-test.png",
+  },
+  {
+    id: "cert-click-wisely",
+    title: "Click Wisely & Social Media Ethics",
+    issuer: "Akademi Adab, Universiti Malaysia Pahang",
+    date: "Jan 2023",
+    image: "/certifications/cert-click-wisely.png",
+    credentialUrl: "/certifications/cert-click-wisely.png",
   },
 ];
 
