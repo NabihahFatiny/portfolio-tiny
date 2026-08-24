@@ -17,7 +17,7 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Portfolio"
           title="Projects"
-          description="A selection of things I've built — from university group work to personal side projects."
+          description="My software development projects showcase my experience in building web and mobile applications using Flutter and modern web development tools. They demonstrate my skills in system design, UI development and problem-solving. Visit my GitHub to explore more projects."
         />
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">

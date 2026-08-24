@@ -17,7 +17,7 @@ export const profile = {
   avatarInitials: "F",
   socials: {
     github: "https://github.com/your-username",
-    linkedin: "https://linkedin.com/in/your-username",
+    linkedin: "https://www.linkedin.com/in/nabihahfatiny/",
     twitter: "https://twitter.com/your-username",
     website: "https://your-domain.com",
   },

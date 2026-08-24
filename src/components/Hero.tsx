@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import { DownloadIcon, MapPinIcon } from "@/components/ui/Icons";
+import { ArrowRightIcon, MailIcon, MapPinIcon } from "@/components/ui/Icons";
 import { profile } from "@/data/portfolio";
 
 const greeting = "Hi, I'm";
@@ -57,17 +57,26 @@ export default function Hero() {
 
             <div className="animate-fade-up [animation-delay:0.25s] mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
               <a
-                href="#connect"
+                href={profile.socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
                 className="rounded-full bg-gradient-to-r from-brand-600 to-rose-500 px-8 py-4 text-base font-semibold text-white shadow-md shadow-brand-200 transition hover:-translate-y-0.5 hover:shadow-lg dark:shadow-none"
               >
                 Let&apos;s Connect
               </a>
               <a
-                href={profile.resumeUrl}
+                href="#projects"
                 className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 px-8 py-4 text-base font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
               >
-                <DownloadIcon className="h-5 w-5" />
-                Download Resume
+                <ArrowRightIcon className="h-5 w-5" />
+                View Projects
+              </a>
+              <a
+                href="#connect"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-slate-300 px-8 py-4 text-base font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-brand-400 hover:text-brand-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-brand-500 dark:hover:text-brand-400"
+              >
+                <MailIcon className="h-5 w-5" />
+                Contact Me
               </a>
             </div>
           </div>
