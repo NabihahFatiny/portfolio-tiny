@@ -8,7 +8,7 @@ export const profile = {
   role: "Computer Science Graduate",
   tagline: "Building thoughtful software, one line at a time.",
   summary:
-    "I recently completed my degree in Computer Science, specialising in Software Engineering. Throughout my studies, I worked on different web-based projects and gained experience in developing, testing and improving system features. I'm particularly interested in web development, software testing, Quality Assurance and IT support. This portfolio brings together my education, skills, projects and experiences so far.",
+    "I recently completed my degree in Computer Science, specialising in Software Engineering at Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA), as well as my internship as an IT Intern at Xentral Methods. Throughout my studies and internship, I gained hands-on experience in developing, testing and improving web-based systems. I'm particularly interested in web development, software testing, quality assurance and IT support. This portfolio highlights my education, skills, projects and experience so far.",
   location: "Bandar Baru Bangi, Selangor",
   email: "your.email@example.com",
   phone: "+60 12-345 6789",

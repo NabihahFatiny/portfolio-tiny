@@ -21,4 +21,57 @@
   .section-padding {
     @apply py-24 sm:py-32;
   }
+
+  .hero-type-line1 {
+    animation: heroLine1 4s steps(var(--l1-steps, 7), end) 0.2s infinite;
+  }
+
+  .hero-type-line2 {
+    animation:
+      heroLine2 4s steps(var(--type-steps, 6), end) 0.2s infinite,
+      blink-caret 0.8s step-end infinite;
+  }
+}
+
+@keyframes heroLine1 {
+  0% {
+    width: 0;
+  }
+  14% {
+    width: var(--l1-width, 100%);
+  }
+  82% {
+    width: var(--l1-width, 100%);
+  }
+  96%,
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes heroLine2 {
+  0%,
+  14% {
+    width: 0;
+  }
+  26% {
+    width: var(--type-width, 100%);
+  }
+  70% {
+    width: var(--type-width, 100%);
+  }
+  82%,
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
 }

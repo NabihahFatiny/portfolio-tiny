@@ -56,7 +56,7 @@ export default function Certifications() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-1 text-sm font-medium text-brand-600 hover:underline dark:text-brand-400"
                 >
-                  Verify credential
+                  View credentials
                   <ExternalLinkIcon className="h-3.5 w-3.5" />
                 </a>
               </div>

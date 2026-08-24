@@ -3,6 +3,8 @@ import Container from "@/components/ui/Container";
 import { DownloadIcon, MapPinIcon } from "@/components/ui/Icons";
 import { profile } from "@/data/portfolio";
 
+const greeting = "Hi, I'm";
+
 export default function Hero() {
   return (
     <section
@@ -15,9 +17,29 @@ export default function Hero() {
           {/* Left column — intro & CTAs */}
           <div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
             <h1 className="animate-fade-up text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white">
-              Hi, I&apos;m
+              <span
+                className="hero-type-line1 inline-block overflow-hidden whitespace-nowrap align-bottom"
+                style={
+                  {
+                    "--l1-steps": greeting.length,
+                    "--l1-width": `${greeting.length}ch`,
+                  } as React.CSSProperties
+                }
+              >
+                {greeting}
+              </span>
               <br />
-              <span className="text-gradient">{profile.name}</span>
+              <span
+                className="hero-type-line2 text-gradient inline-block overflow-hidden whitespace-nowrap border-r-4 border-brand-500 align-bottom"
+                style={
+                  {
+                    "--type-steps": profile.name.length,
+                    "--type-width": `${profile.name.length}ch`,
+                  } as React.CSSProperties
+                }
+              >
+                {profile.name}
+              </span>
             </h1>
 
             <p className="animate-fade-up [animation-delay:0.1s] mt-5 text-2xl font-semibold text-slate-700 dark:text-slate-300">
