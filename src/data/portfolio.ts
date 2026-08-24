@@ -57,7 +57,7 @@ export const education: Education[] = [
   {
     id: "edu-2",
     institution: "Universiti Malaysia Pahang Al-Sultan Abdullah",
-    degree: "Diploma in Computer Science",
+    degree: "Diploma in Computer Science with Honours",
     startYear: 2021,
     endYear: 2023,
     location: "Pahang, Malaysia",

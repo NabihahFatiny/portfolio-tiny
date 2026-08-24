@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-32 sm:pt-40"
+      className="relative overflow-hidden pt-24 sm:pt-28"
       aria-label="Home"
     >
       <Container className="pb-24 sm:pb-32">

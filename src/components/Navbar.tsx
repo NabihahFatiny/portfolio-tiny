@@ -26,7 +26,7 @@ export default function Navbar() {
         isScrolled ? "shadow-sm" : ""
       }`}
     >
-      <Container className="flex h-24 items-center justify-between">
+      <Container className="flex h-16 items-center justify-between">
         <a
           href="#home"
           className="text-lg font-bold tracking-tight text-slate-900 sm:text-xl dark:text-white"
@@ -49,11 +49,11 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setIsOpen((v) => !v)}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-lg text-slate-700 md:hidden dark:text-slate-200"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-slate-700 md:hidden dark:text-slate-200"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
-          {isOpen ? <CloseIcon className="h-7 w-7" /> : <MenuIcon className="h-7 w-7" />}
+          {isOpen ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
         </button>
       </Container>
 
