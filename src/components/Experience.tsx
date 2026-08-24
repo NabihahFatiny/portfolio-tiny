@@ -42,11 +42,7 @@ export default function Experience() {
               </div>
 
               <div className="flex flex-col justify-center p-5 sm:p-6">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-brand-600 to-rose-500 shadow-sm shadow-brand-200 dark:shadow-none">
-                  <BriefcaseIcon className="h-4 w-4 text-white" />
-                </span>
-
-                <h3 className="mt-3 text-lg font-extrabold text-slate-900 sm:text-xl dark:text-white">
+                <h3 className="text-lg font-extrabold text-slate-900 sm:text-xl dark:text-white">
                   {exp.role}
                 </h3>
                 <p className="mt-0.5 text-sm font-semibold text-brand-600 dark:text-brand-400">
