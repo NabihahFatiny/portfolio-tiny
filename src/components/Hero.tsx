@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-12">
           {/* Left column — intro & CTAs */}
           <div className="order-2 flex flex-col items-center text-center lg:order-1 lg:items-start lg:text-left">
-            <h1 className="animate-fade-up text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl dark:text-white">
+            <h1 className="animate-fade-up text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white">
               <span
                 className="hero-type-line1 inline-block overflow-hidden whitespace-nowrap align-bottom"
                 style={
@@ -89,31 +89,31 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="animate-fade-up [animation-delay:0.3s] mt-10 flex items-center gap-14">
+            <div className="animate-fade-up [animation-delay:0.3s] mt-10 flex items-center gap-10">
               <div>
-                <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
+                <p className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
                   4+
                 </p>
-                <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   Years
                 </p>
               </div>
               <div>
-                <p className="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
+                <p className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl dark:text-white">
                   15+
                 </p>
-                <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                   Projects
                 </p>
               </div>
             </div>
 
-            <div className="animate-fade-up [animation-delay:0.35s] mt-10">
-              <p className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
+            <div className="animate-fade-up [animation-delay:0.35s] mt-8">
+              <p className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl dark:text-white">
                 Web Dev <span className="text-brand-500">&middot;</span> Software Testing{" "}
                 <span className="text-brand-500">&middot;</span> IT
               </p>
-              <p className="mt-2 text-base font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
+              <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-slate-500 dark:text-slate-400">
                 Interests
               </p>
             </div>
