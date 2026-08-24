@@ -20,7 +20,7 @@ export default function Projects() {
           description="My software development projects showcase my experience in building web and mobile applications using Flutter and modern web development tools. They demonstrate my skills in system design, UI development and problem-solving. Visit my GitHub to explore more projects."
         />
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <Card
               key={project.id}
@@ -31,7 +31,7 @@ export default function Projects() {
                   src={project.image}
                   alt={`${project.title} preview`}
                   fill
-                  sizes="(min-width: 640px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover"
                   unoptimized
                 />
@@ -42,7 +42,7 @@ export default function Projects() {
                 )}
               </div>
 
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-1 flex-col p-5">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                   {project.title}
                 </h3>

@@ -25,7 +25,7 @@ export default function Certifications() {
           inverted
         />
 
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-2xl">
           <div className="relative" style={{ perspective: "1600px" }}>
             <div
               key={cert.id}
